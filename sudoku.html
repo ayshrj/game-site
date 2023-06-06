@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
     <link rel="stylesheet" href="sudoku.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="sudoku.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,6 +15,19 @@
             Sudoku
         </h1>
         <div class="mistake">Mistake: <span id="mistake">0</span>/3</div>
+        <div id="gameBoard"></div>
+        <div id="digits"></div>
+        <div id="delete">
+            <i class="fa fa-trash"></i>
+        </div>
+        <div id="new-game">
+            <i class="fa fa-gamepad"></i>
+        </div>
+        <div id="solve-this-game">
+            <i class="fa fa-puzzle-piece"></i>
+        </div>
     </div>
+    <!-- <input type="text" id="myInput" placeholder="Diff">
+    <button onclick="setDifficulty()">Submit</button> -->
 </body>
 </html>
